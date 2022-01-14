@@ -1,13 +1,227 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,h1,h3,h4,h5,h6{
+  font-family: 'Roboto',sans-serif;
+}
+
+/* COLORES */
+.green{
+  color: #4ea35f;
+}
+.orange{
+  color: #eb9751;
+}
+.pink{
+  color: #cb4389;
+}
+.gray{
+  color: #606060;
+}
+.white{
+  color: #ffffff;
+}
+
+/* BACKGROUNDS */
+.green-bg{
+  background-color: #4ea35f;
+}
+.orange-bg{
+  background-color: #eb9751;
+}
+.pink-bg{
+  background-color: #cb4389;
+}
+.gray-bg{
+  background-color: #606060;
+}
+.white-bg{
+  background-color: #ffffff;
+}
+
+/* ALINEACIONES */
+.center{
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+.justify{
+  text-align: justify;
+}
+
+.dNone{
+  display: none;
+}
+
+/* BOTONES */
+.btn-big{
+  max-width: 250px;
+  font-weight: bold;
+  font-size: 25px;
+  box-shadow: 3px 3px 5px #d9d9d9;
+}
+.btn-big:hover{
+  box-shadow: 3px 3px 5px #ffffff;
+}
+.btn-center{
+  margin: auto;
+}
+.btn-green{
+  background-color: #4ea35f;
+}
+.btn-green:hover{
+  color: #005e2c;
+}
+
+/* HEADER */
+.header-container{
+  box-shadow: 0px 5px 5px #d9d9d9;
+}
+.header-container h1{
+  font-size: 35px;
+}
+
+.homeContainer p{
+  font-size: 0.8rem
+}
+
+
+/* HOME */
+
+.logo-pasos{
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  display: block;
+}
+
+/* FOOTER */
+.footer-logo{
+  max-width: 132PX;
+}
+
+/* MENU */
+.menu-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+.menu-container ul li .link-container{
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cb4389;
+  padding:10px 0;
+}
+.menu-container ul li .link-container .button-container button{
+  display: flex;
+  align-items: center;
+  width: 75px;
+}
+.menu-container ul li .link-container .button-container button:hover{
+  color:#ffffff;
+  background-color: #eb7d51;
+}
+
+.pdf-container iframe{
+  width: 100%;
+  height: 80vh;
+  zoom: 0.89;
+  -moz-transform: scale(0.89);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.89);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.89);
+  -webkit-transform-origin: 0 0;
+}
+.pdf-container embed{
+  width: 100%;
+  height: 80vh;
+  zoom: 0.89;
+  -moz-transform: scale(0.89);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.89);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.89);
+  -webkit-transform-origin: 0 0;
+}
+
+#refToScroll{
+  display: none;
+}
+
+.btn-regresar{
+  display: none;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px) {
+  .pdf-container iframe{
+    zoom: 0.98;
+    -moz-transform: scale(0.98);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.98);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.98);
+    -webkit-transform-origin: 0 0;
+  }
+  .pdf-container embed{
+    zoom: 0.98;
+    -moz-transform: scale(0.98);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.98);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.98);
+    -webkit-transform-origin: 0 0;
+  }
+  #refToScroll{
+    display: block;
+  }
+  .btn-regresar{
+    display: block;
+    max-width: 250px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  /* HOME */
+  .logo-pasos{
+    margin-bottom: 30px;
+    max-width: 100px;
+  }
+  .header-container h1{
+    font-size: calc(0.75rem + 0.75vw)
+  }
+  .homeContainer h2{
+    margin-bottom: .1rem;
+    font-size: calc(1rem + 1.5vw);
+  }
+  .homeContainer p{
+    font-size: 0.8rem
+  }
+  .homeContainer .btn-big{
+    min-width: 150px;
+    font-size: 15px;
+  }
+
+  /* Maternidad */
+  .maternidadContainer h2{
+    margin-bottom: .1rem;
+    font-size: calc(1rem + 1.5vw);
+  }
+
+  .maternidadContainer .menu-container ul li{
+    font-size: 11px;
+  }
+  .maternidadContainer .menu-container ul li .link-container .button-container button{
+    font-size: 12px;
+  }
 }
