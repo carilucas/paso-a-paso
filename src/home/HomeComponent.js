@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { path } from '../path'
+import { url } from '../url'
 
 
 export const HomeComponent = () => {
@@ -8,7 +9,7 @@ export const HomeComponent = () => {
       <div className='homeContainer'>
          <div className="row">
             <div className="col-sm-4">
-               <img src={`./assets/images/01-5-pasos.jpg`} alt="5 pasos" className="img-fluid logo-pasos" />
+               <img src={`${url}/assets/images/01-5-pasos.jpg`} alt="5 pasos" className="img-fluid logo-pasos" />
             </div>
             <div className="col-sm-8">
                <h2 className="pink ">Introducción</h2>

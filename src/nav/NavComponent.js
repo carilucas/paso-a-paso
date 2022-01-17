@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { PdfComponent } from '../pdf/PdfComponent';
 import { url } from '../url';
-// import { path } from '../path';
+
 
 
 export const NavComponent = () => {
@@ -47,7 +47,7 @@ export const NavComponent = () => {
                               Salud sexual, reproductiva y métodos anticonceptivos
                            </div>
                            <div className="button-container">
-                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu1.pdf') } >IR <img src={`./assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
+                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu1.pdf') } >IR <img src={`${url}/assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
                            </div>
                         </div>
                      </li>
@@ -57,7 +57,7 @@ export const NavComponent = () => {
                               Control prenatal
                            </div>
                            <div className="button-container">
-                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu2.pdf') } >IR <img src={`./assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
+                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu2.pdf') } >IR <img src={`${url}/assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
                            </div>
                         </div>
                      </li>
@@ -67,7 +67,7 @@ export const NavComponent = () => {
                               Cuidado integral desde el nacimiento hasta los 6 meses
                            </div>
                            <div className="button-container">
-                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu3.pdf') } >IR <img src={`./assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
+                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu3.pdf') } >IR <img src={`${url}/assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
                            </div>
                         </div>
                      </li>
@@ -77,7 +77,7 @@ export const NavComponent = () => {
                               Cuidado integral desde los 6 meses hasta los 24 meses
                            </div>
                            <div className="button-container">
-                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu4.pdf') } >IR <img src={`./assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
+                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu4.pdf') } >IR <img src={`${url}/assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
                            </div>
                         </div>
                      </li>
@@ -87,7 +87,7 @@ export const NavComponent = () => {
                               Cuidado integral desde los 3 años hasta los 5 años
                            </div>
                            <div className="button-container">
-                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu5.pdf') } >IR <img src={`./assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
+                              <button className="orange-bg white btn" onClick={ ()=>handlePdf('/assets/pdf/menu5.pdf') } >IR <img src={`${url}/assets/images/05-right-arrow.png`} alt="5 pasos" className="img-fluid " /></button>
                            </div>
                         </div>
                      </li>

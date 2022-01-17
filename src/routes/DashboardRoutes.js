@@ -9,19 +9,19 @@ import { FooterComponent } from '../footer/FooterComponent';
 import { HeaderComponent } from '../header/HeaderComponent';
 import { HomeComponent } from '../home/HomeComponent';
 import { NavComponent } from '../nav/NavComponent';
-import { path } from '../path';
+// import { url } from '../url';
 
 
 export const DashboardRoutes = () => {
    return (
       <div>
          <HeaderComponent/>
-         <Router>
+         <Router basename='/pasoapaso'>
             <div className="container mt-4">
                <Routes>
-                  <Route path={`${path}/`} element={<HomeComponent/>}/>
-                  <Route path={`${path}/maternidad-segura`} element={<NavComponent/>}/>
-                  <Route path='*' element={<Navigate  to={`/${path}`}/>}/>
+                  <Route path={`/`} element={<HomeComponent/>}/>
+                  <Route path={`/maternidad-segura`} element={<NavComponent/>}/>
+                  <Route url='*' element={<Navigate  to={`/`}/>}/>
                </Routes>
             </div>
          </Router>
